@@ -1,0 +1,31 @@
+
+body{
+    margin: 0;
+}
+/* Partie NavBar*/
+
+button {
+    text-decoration: none;
+    border: 0;
+    padding-right: 10px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Hero';
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.navbar,button {
+    background-color: #1F2937;
+}
+
+/* problème de font qui ne change pas pour le logo*/
