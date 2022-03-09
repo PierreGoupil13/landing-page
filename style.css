@@ -1,10 +1,32 @@
 
 body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Hero';
+}
+
+.page {
+    margin: 0  auto;
+}
+
+h1, p{
     margin: 0;
 }
+
+
+.navbar, 
+.first-section, 
+.info-section,
+.quote-section,
+.call-section {
+    padding-right: 200px; 
+    padding-left: 200px;
+}
+
 /* Partie NavBar*/
 
-button {
+.button-header {
     text-decoration: none;
     border: 0;
     padding-right: 10px;
@@ -12,14 +34,15 @@ button {
     color: #E5E7EB;
 }
 
-.navbar {
+.navbar {   
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center;  
+    padding-top: 20px;
 }
 
 .logo{
-    font-family: 'Hero';
+    
     font-size: 24px;
     color: #F9FAF8;
 }
@@ -29,3 +52,138 @@ button {
 }
 
 /* problème de font qui ne change pas pour le logo*/
+
+/* First Section*/
+
+.first-section {
+    display : flex;
+    justify-content: space-around;
+    background-color: #1F2937;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.image-holder {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+
+.text-section {
+    flex: 1 ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #F9FAF8;
+    padding-right: 20px;
+}
+
+.blue-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 12px;
+    flex-shrink: 1;
+    margin-top: 10px;
+}
+
+/* Infos section */
+
+.info-section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.info-bloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    padding-right: 20px;
+}
+
+.img-section{
+    display: flex;
+}
+
+.img-bloc{
+    height: 170px;
+    width: 170px;
+    border: solid;
+    border-color: #3882F6;
+    border-radius: 10px;
+}
+
+.text-bloc {
+    text-align: center;
+}
+
+#info-title {
+    padding-bottom: 20px;
+}
+
+/* Quote Section */
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    background-color: #E5E7EB;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: lighter;
+}
+.signature {
+    align-self: flex-end;
+}
+
+/* Call section */
+
+.call-section{
+    background-color: #F9FAF8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blue-bloc{
+    background-color: #3882F6;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+
+}
+
+.blue-text{
+    color: #F9FAF8;
+}
+
+.button-call{
+    align-self: center;
+}
+
+
+.blue-button.action{
+    border: solid #F9FAF8;
+    padding: 5px 30px;
+    border-radius: 8px;
+
+}
